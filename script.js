@@ -1,3 +1,5 @@
+var storage=0;
+
 function seven(){
     document.getElementById('screen').innerHTML += 7;
 }
@@ -43,7 +45,12 @@ function divide(){
 function decimal(){
     document.getElementById('screen').innerHTML+=".";
 }
-
+function store(){
+   storage= parseFloat(document.getElementById('screen').innerHTML);
+}
+function variable(){
+    document.getElementById('screen').innerHTML+=storage;
+}
 
 
 function equal(){

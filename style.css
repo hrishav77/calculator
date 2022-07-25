@@ -14,11 +14,11 @@ h1{
 }
 
 td{
-    border: 2px black solid;background-color: #febcfe;padding: 25px;cursor: pointer;
+    border: 2px black solid;background-color: #febcfe;padding: 20px;cursor: pointer;
     border-radius: 7px;
 }
 .screen{
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(to right, #434343 0%, rgba(0, 0, 0, 0.939) 100%);
     padding: 20px;
     color: whitesmoke;
     font-size: 25px;
