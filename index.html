@@ -14,7 +14,8 @@
       <li>Input numbers using mouse</li> 
       <li>Click equal to get your answer</li>
       <li>Use only one operator at a time for eg 2+4,2x6,6/3 etc</li>
-      <li>+M is used to store an <b>integer</b> which can be used later <br> using A</li>
+      <li>+M is used to store an <b>integer</b> which can be used later used <br> by clicking MR</li>
+      <li>click screen to change screen color</li>
     </ul>
   </p>
     <center>
@@ -41,14 +42,21 @@
             <td onclick="minus()" class="operator">-</td>
           </tr>
           <td onclick="zero()">0</td>
+          <td onclick="zero();zero();">00</td>
           <td onclick="decimal()">.</td>
-          <td onclick="equal()">=</td>
           <td onclick="sum()" class="operator">+</td>
           <tr>
+          <td onclick="power()">^</td>
+          <td onclick="equal()">=</td>
+          <td onclick="store()" id="store">+M</td>
+          <td onclick="variable()">MR</td>
+          </tr>
           <td onclick="clean()" >AC</td>
           <td onclick="backspace()" >Del</td>
-          <td onclick="store()">+M</td>
-          <td onclick="variable()">A</td>
+          <td onclick="size()" colspan="2">Screen</td>
+          <tr>
+            
+          
           </tr>
       </center>
     

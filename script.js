@@ -1,4 +1,7 @@
 var storage=0;
+var key='unpressed';
+
+
 
 function seven(){
     document.getElementById('screen').innerHTML += 7;
@@ -47,11 +50,23 @@ function decimal(){
 }
 function store(){
    storage= parseFloat(document.getElementById('screen').innerHTML);
+   const btn=document.getElementById('store');
+   btn.style.backgroundColor='white';
 }
 function variable(){
     document.getElementById('screen').innerHTML+=storage;
+    const btn=document.getElementById('store');
+    btn.style.backgroundColor='#febcfe';
+    storage="";
 }
-
+function power(){
+    document.getElementById('screen').innerHTML+="^";
+}
+function size(){
+    const screen=document.getElementById('screen');
+    if (key=='unpressed'){screen.style.backgroundColor='white';screen.style.color="black";key='pressed';}
+    else{screen.style.backgroundColor=" rgba(40, 80, 56, 0.986)";screen.style.color="white";key='unpressed';}
+}
 
 function equal(){
    let words=document.getElementById('screen').innerHTML;
@@ -93,6 +108,15 @@ function equal(){
         secondnum+=words[k];
        }
         document.getElementById('screen').innerHTML=parseFloat(firstnum)/parseFloat(secondnum) ;
+    }
+    else if(words[i]=="^"){
+        for (let j = 0; j < i; j++){
+        firstnum+=words[j];
+       }
+       for (let k = i+1; k <words.length; k++){
+        secondnum+=words[k];
+       }
+        document.getElementById('screen').innerHTML=parseFloat(firstnum)**parseFloat(secondnum) ;
     }
   }
   
