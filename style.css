@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{
+    background-color: antiquewhite;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+h1{
+    font-family: 'Dancing Script', cursive;font-size: 60px;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    -webkit-background-clip: text;color: transparent;
+}
+
+td{
+    border: 2px black solid;background-color: #febcfe;padding: 25px;cursor: pointer;
+    border-radius: 7px;
+}
+.screen{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.operator{
+    background-image: linear-gradient(to right,rgba(254,62,209,255),rgba(245, 245, 245, 0.611) );
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+        <h1>Calculator</h1>
+        <table>
+          <tr>
+            <td colspan="4" class="screen" id="screen"></td>
+          </tr> 
+          <tr>
+            <td onclick="seven()">7</td>
+            <td onclick="eight()">8</td>
+            <td onclick="nine()">9</td>
+            <td onclick="mult()" class="operator">X</td>
+            <tr>
+              <td onclick="four()">4</td>
+              <td onclick="five()">5</td>
+              <td onclick="six()">6</td>
+              <td onclick="divide()" class="operator">/</td>
+            </tr>
+            <td onclick="one()">1</td>
+            <td onclick="two()">2</td>
+            <td onclick="three()">3</td>
+            <td onclick="minus()" class="operator">-</td>
+          </tr>
+          <td onclick="zero()">0</td>
+          <td>.</td>
+          <td onclick="equal()">=</td>
+          <td onclick="sum()" class="operator">+</td>
+          <tr>
+          <td onclick="clean()" colspan="2" > clear</td>
+          <td onclick="backspace()" colspan="2">del</td>
+          </tr>
+      </center>
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>
