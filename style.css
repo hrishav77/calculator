@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
 body{
     background-color: antiquewhite;
     background-image: url("bg.jpg");
@@ -25,4 +26,15 @@ td{
 
 .operator{
     background-image: linear-gradient(to right,rgba(254,62,209,255),rgba(245, 245, 245, 0.611) );
+}
+.instructions{
+    font-family: 'Dancing Script', cursive;font-size: 60px;
+    font-size: 30px; text-align: center;
+}
+.instructiontext{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 20px;color: #febcfe;
+}
+p {
+    border:3px rgb(229, 104, 233) solid;
 }

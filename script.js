@@ -40,6 +40,9 @@ function mult(){
 function divide(){
     document.getElementById('screen').innerHTML+="/";
 }
+function decimal(){
+    document.getElementById('screen').innerHTML+=".";
+}
 
 
 
@@ -55,7 +58,7 @@ function equal(){
        for (let k = i+1; k <words.length; k++){
         secondnum+=words[k];
        }
-        document.getElementById('screen').innerHTML=parseInt(firstnum)+parseInt(secondnum) ;
+        document.getElementById('screen').innerHTML=parseFloat(firstnum)+parseFloat(secondnum) ;
     }
     else if(words[i]=="x"){
         for (let j = 0; j < i; j++){
@@ -64,7 +67,7 @@ function equal(){
        for (let k = i+1; k <words.length; k++){
         secondnum+=words[k];
        }
-        document.getElementById('screen').innerHTML=parseInt(firstnum)*parseInt(secondnum) ;
+        document.getElementById('screen').innerHTML=parseFloat(firstnum)*parseFloat(secondnum) ;
     }
     else if(words[i]=="-"){
         for (let j = 0; j < i; j++){
@@ -73,7 +76,7 @@ function equal(){
        for (let k = i+1; k <words.length; k++){
         secondnum+=words[k];
        }
-        document.getElementById('screen').innerHTML=parseInt(firstnum)-parseInt(secondnum) ;
+        document.getElementById('screen').innerHTML=parseFloat(firstnum)-parseFloat(secondnum) ;
     }
     else if(words[i]=="/"){
         for (let j = 0; j < i; j++){
@@ -82,7 +85,7 @@ function equal(){
        for (let k = i+1; k <words.length; k++){
         secondnum+=words[k];
        }
-        document.getElementById('screen').innerHTML=parseInt(firstnum)/parseInt(secondnum) ;
+        document.getElementById('screen').innerHTML=parseFloat(firstnum)/parseFloat(secondnum) ;
     }
   }
   

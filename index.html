@@ -8,7 +8,16 @@
     <title>Calculator</title>
 </head>
 <body>
+  <h1 class="instructions">Instructions</h1>
+  <p>
+    <ul class="instructiontext">
+      <li>Input numbers using mouse</li> 
+      <li>Click equal to get your answer</li>
+      <li>Use only one operator at a time for eg 2+4,2x6,6/3 etc</li>
+    </ul>
+  </p>
     <center>
+  
         <h1>Calculator</h1>
         <table>
           <tr>
@@ -31,7 +40,7 @@
             <td onclick="minus()" class="operator">-</td>
           </tr>
           <td onclick="zero()">0</td>
-          <td>.</td>
+          <td onclick="decimal()">.</td>
           <td onclick="equal()">=</td>
           <td onclick="sum()" class="operator">+</td>
           <tr>
